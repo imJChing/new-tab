@@ -27,7 +27,15 @@ p {
 	color: white;
 	padding-top: 3%;
 	font-size: 25px;
-	text-shadow: 0 0px 15px #fff;
+	animation-name: quote-anim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes quote-anim {
+  0%   {text-shadow: 0 0px 15px #fff;}
+  50%  {text-shadow: 0 0px 0px #fff;}
+  100% {text-shadow: 0 0px 15px #fff;}
 }
 
 #author {
