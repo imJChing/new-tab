@@ -1,5 +1,5 @@
 window.onload = function start() {
-	random = Math.floor((Math.random() * 163) + 1);
+	random = Math.floor((Math.random() * 164) + 1);
 	var quotes = fetchQuote(random);
 	document.getElementById('quote').innerHTML = quotes.quote;
 	document.getElementById('author').innerHTML = "- " + quotes.author;
@@ -192,6 +192,7 @@ function fetchQuote(index) {
     lines[161] = {quote:"It's only after we've lost everything that we're free to do anything.",author:"Unknown"};
     lines[162] = {quote:"Dreams Become Reality, When intentions Become Actions!",author:"Unknown"};
     lines[163] = {quote:"Life is either a darling adventure, or nothing.",author:"Unknown"};
+    lines[164] = {quote:"Life is really simple, but we insist on making it complicated.",author:"Confucius"};
 
     return lines[index];   
 }
